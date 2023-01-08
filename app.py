@@ -163,15 +163,15 @@ def keywords(corpus):
     
     return attributes
 
-# front end elements of the web page
-html_temp = """ 
-<div style ="background-color:yellow;padding:13px"> 
-<h1 style ="color:black;text-align:center;">Sentiment Analysis for Hotel Review</h1> 
-</div> 
-"""
+# # front end elements of the web page
+# html_temp = """ 
+# <div style ="background-color:yellow;padding:13px"> 
+# <h1 style ="color:black;text-align:center;">Sentiment Analysis for Hotel Review</h1> 
+# </div> 
+# """
 
-# display the front end aspect
-st.markdown(html_temp, unsafe_allow_html=True)
+# # display the front end aspect
+# st.markdown(html_temp, unsafe_allow_html=True)
 
 # following lines create boxes in which user can enter data required to make prediction
 # Textbox for text user is entering
