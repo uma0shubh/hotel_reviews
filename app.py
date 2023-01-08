@@ -178,6 +178,18 @@ def keywords(corpus):
 st.subheader("Enter the text you'd like to analyze.")
 text = st.text_input('Enter text')  # text is stored in this variable
 
+# when 'Button' is clicked, make the prediction and store it  
+if st.button("Predict"):
+    # predict = Prediction(text)
+    cleaned = processing(text)
+    afn = Afinn()
+    score = [afn.score(item) for item in cleaned]
+    Affin_sentiment = ['Postitive' if score > 0 else 'Negative' for score in score]
+    predict = Affin_sentiment[0]
+    st.success('The Sentiment of the review is {}'.format(predict))
+
+
+
 # this is the main function in which we define our webpage
 # def main():
 #     # front end elements of the web page
