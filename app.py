@@ -198,20 +198,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-text = 'nice needs undating husband stayed inn market celebrate birthday overall stay wonderful, enjoyed two-story suite incredible view market sound, quiet location perfect, complaint hotel needs better job keeping maintainance, room major scratches walls stains carpets, cracks bathroom tile significant signs wear bathroom, price expected regards quality upkeep, hopefully management pay attention keeping lovely hotel fresh lovely,'
-
-cleaned = processing(text)
-afn = Afinn()
-score = [afn.score(item) for item in cleaned]
-Affin_sentiment = ['Postitive' if score > 0 else 'Negative' for score in score]
-Affin_sentiment[0]
-
-keywords(text)
-
-pip freeze
-
-
-
-
-
