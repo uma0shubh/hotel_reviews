@@ -26,7 +26,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # from pickle import dump
 # from pickle import load
 # from sklearn.linear_model import LogisticRegression
-#import streamlit as st
+import streamlit as st
 from sklearn.feature_extraction.text import TfidfTransformer
 from scipy.sparse import coo_matrix
 from spacy.lang.en import English
