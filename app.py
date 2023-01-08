@@ -187,6 +187,12 @@ if st.button("Predict"):
     Affin_sentiment = ['Postitive' if score > 0 else 'Negative' for score in score]
     predict = Affin_sentiment[0]
     st.success('The Sentiment of the review is {}'.format(predict))
+    
+# if st.button("IMP Attributes"):
+    st.subheader("Important Attributes in Reviews")
+    imp_att=keywords(text)
+    for i in imp_att:
+        st.success(i)
 
 
 
