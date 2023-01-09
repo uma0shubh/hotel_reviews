@@ -212,7 +212,7 @@ if st.button("Predict"):
     Affin_sentiment = ['Positive' if score > 0 else 'Negative' for score in score]
     Reaction = ['😄' if score > 0 else '😡' for score in score]
     predict = Affin_sentiment[0]
-    st.success('The Sentiment of the review is {} {}'.format(predict, Reaction))
+    st.success('The Sentiment of the review is {} {}'.format(predict, Reaction[0]))
 #     st.success('{} score : {}'.format(Reaction[0], score[0]))
     
 # if st.button("IMP Attributes"):
