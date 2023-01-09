@@ -209,10 +209,11 @@ if st.button("Predict"):
     cleaned = processing(text)
     afn = Afinn()
     score = [afn.score(item) for item in cleaned]
-    Affin_sentiment = ['Positive 😄' if score > 0 else 'Negative 😡' for score in score]
+    Affin_sentiment = ['Positive' if score > 0 else 'Negative' for score in score]
+    Rection = ['😄' if score > 0 else '😡' for score in score]
     predict = Affin_sentiment[0]
     st.success('The Sentiment of the review is {}'.format(predict))
-#     st.success('The Sentiment of the review is {} with score {}'.format(predict, score[0]))
+    st.success('{} score : {}'.format(Rection, score[0]))
     
 # if st.button("IMP Attributes"):
     st.subheader("Important Attributes in Reviews")
