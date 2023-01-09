@@ -153,7 +153,7 @@ def keywords(corpus):
     review = ' '.join(review)
     output2.append(review)
     
-    tfidf2 = TfidfVectorizer(norm="l2",analyzer='word', stop_words=stop_words_keywords,ngram_range=(2,2))
+    tfidf2 = TfidfVectorizer(norm="l2",analyzer='word', stop_words=stop_words_keywords,ngram_range=(1,1))
     tfidf2_x = tfidf2.fit_transform(output2)
     tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
     tfidf_transformer.fit(tfidf2_x)
