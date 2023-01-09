@@ -211,6 +211,7 @@ if st.button("Predict"):
     score = [afn.score(item) for item in cleaned]
     Affin_sentiment = ['Positive' if score > 0 else 'Negative' for score in score]
     predict = Affin_sentiment[0]
+    st.success('The Score of the review is {}'.format(score))
     st.success('The Sentiment of the review is {}'.format(predict))
     
 # if st.button("IMP Attributes"):
